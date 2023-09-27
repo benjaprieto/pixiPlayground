@@ -22,6 +22,7 @@ export const createEntity = (texture: Texture<Resource>, x: number, y: number): 
 };
 
 export const getNextEntityDirection = (viewWidth: number, c: Entity): 'left' | 'right' => {
+  // @todo Document test
   if (c.sprite.x >= viewWidth) {
     return 'left';
   }
@@ -37,3 +38,7 @@ export const getNextEntityPosition = (c: Entity): number => {
   }
   return c.sprite.x - c.speed;
 };
+
+function a() { 
+
+}
